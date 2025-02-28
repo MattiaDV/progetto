@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --black: rgb(20, 20, 20);
+    --white: rgb(230, 230, 230);
+}
