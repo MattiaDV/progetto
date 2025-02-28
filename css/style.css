@@ -8,6 +8,7 @@
 :root {
     --black: rgb(20, 20, 20);
     --white: rgb(230, 230, 230);
+    --white-dark: rgb(200, 200, 200);
     --box-shadow: rgba(231, 231, 231, 0.623);
 }
 
@@ -15,42 +16,53 @@ body {
     background: var(--black);
 }
 
-.container_animation {
-    width: 90%;
-    padding-top: 20px;
-    margin: 0 auto;
+.upperPage {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 40px;
+}
+
+.logo * {
+    width: 40vw;
+    height: auto;
+}
+
+.title {
+    font-size: 72px;
+    color: white;
+    font-weight: 600;
+}
+
+.navbar-dinamica {
+    width: 100%;
+    background: var(--white);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 20px;
-    height: 100vh;
 }
 
-.pallino {
-    width: 30px;
-    height: 30px;
+.button {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background: var(--white);
-    margin-bottom: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     transition: 0.4s;
 }
 
-.loading-c {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 50%;
-    transition: 0.5s;
-    animation: rotateAnimation 2s linear infinite;
-}
-
-@keyframes rotateAnimation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.button:hover {
+    background: var(--white-dark);
 }
